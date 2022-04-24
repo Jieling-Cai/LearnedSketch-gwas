@@ -45,8 +45,7 @@ def run_NN2(train_data, train_labels, val_data, val_labels, checkpoint_path, los
     input2 = Input(shape=(1,),name='input2')
     input3 = Input(shape=(1,),name='input3')
     input4 = Input(shape=(9,),name='input4')
-    # x = Dense(32,activation='relu')(input1)
-    # x = Dense(32,activation='relu')(x)
+
     x = Embedding(11, 1, input_length=9, mask_zero=True)(input1)
     x = SimpleRNN(9)(x)
     y =  Embedding(5, 1, input_length=1)(input2)
@@ -56,19 +55,7 @@ def run_NN2(train_data, train_labels, val_data, val_labels, checkpoint_path, los
     k = Embedding(11, 1, input_length=9, mask_zero=True)(input4)
     k = SimpleRNN(9)(k)
 
-    # y = Dense(32,activation='relu')(input2)
-    # y = Dense(32,activation='relu')(y)
-    # z = Dense(32,activation='relu')(input3)
-    # z = Dense(32,activation='relu')(z)
-    # k =  Dense(32,activation='relu')(input4)
-    # k = Dense(32,activation='relu')(k)
-    # y =  Dense(64,kernel_initializer=initializers.TruncatedNormal(mean=0.0, stddev=0.05, seed=2),activation='relu')(input2)
-    # y = Dense(32,kernel_initializer=initializers.TruncatedNormal(mean=0.0, stddev=0.05, seed=2),activation='relu')(y)
-    # z =  Dense(64,kernel_initializer=initializers.TruncatedNormal(mean=0.0, stddev=0.05, seed=2),activation='relu')(input3)
-    # z = Dense(32,kernel_initializer=initializers.TruncatedNormal(mean=0.0, stddev=0.05, seed=2),activation='relu')(z)
-
     a = Concatenate()([x, y, z, k])
-    # a = Flatten()(a)
     a = Dense(64,activation='relu')(a)
     a = Dense(32, activation='relu')(a)
     a = Dense(4,activation='relu')(a)
@@ -130,17 +117,12 @@ def save_checkpoint_and_plot_error(model, checkpoint_path, train_data, train_lab
 def reload_model_and_continue_training(checkpoint_path, train_data, train_labels, validation_data, validation_labels, num_epoch,
                                        batch_size_number,loss_err_save_path, initial_epoch):
     model = models.load_model(checkpoint_path)
-    # train_pos_arr = preprocess_pos(train_data[:,0])
-    # val_pos_arr = preprocess_pos(validation_data[:,0])
-    # train_ID_arr = preprocess_pos(train_data[:,0])
-    # val_ID_arr = preprocess_pos(validation_data[:,0])
+
     checkpoint = callbacks.ModelCheckpoint(checkpoint_path, monitor='val_loss',verbose=0, save_best_only=True, save_weights_only=False, mode='auto', period=1)
     history = model.fit(x=train_data, y=train_labels,
                         validation_data=(validation_data,validation_labels),
                         epochs=num_epoch, batch_size=batch_size_number, shuffle=True, callbacks=[checkpoint],initial_epoch=initial_epoch)
-    # history = model.fit(x=[train_pos_arr,train_data[:,1],train_data[:,2],train_ID_arr], y=train_labels,
-    #                     validation_data=([val_pos_arr,validation_data[:,1],validation_data[:,2],val_ID_arr],validation_labels),
-    #                     epochs=num_epoch, batch_size=batch_size_number, shuffle=True, callbacks=[checkpoint],initial_epoch=initial_epoch)
+
     plt.plot(history.epoch, history.history['mae'],label='training mean absolute error')
     plt.plot(history.epoch, history.history['val_mae'],label='validation mean absolute error')
     plt.plot(history.epoch, history.history['loss'],label='training mean squared error')
@@ -154,16 +136,12 @@ def reload_model_and_continue_training(checkpoint_path, train_data, train_labels
 def evaluate(checkpoint_path, data, labels, batch_size_number):
     model = load_model(checkpoint_path)
     # evaluate
-    # mqe, mae = model.evaluate(data, labels, batch_size=batch_size_number,verbose=0)
     mqe, mae = model.evaluate(data, labels, batch_size=batch_size_number,verbose=0)
     print('mean squared error:', mqe, 'mean absolute error:', mae)
 
 def predict(checkpoint_path, test_data, predict_results_save_path, test_data_aft_norm):
     model = load_model(checkpoint_path)
-    # test_pos_arr = preprocess_pos(test_data_aft_norm[:,0])
-    # test_ID_arr = preprocess_pos(test_data_aft_norm[:,3])
     predict_results = model.predict(test_data_aft_norm)
-    # predict_results = model.predict(test_data_aft_norm)
     print('Predictions:', 'max:', np.max(predict_results), 'min:', np.min(predict_results), 'mean:', np.mean(predict_results), 'median:',
           np.median(predict_results))
     print('Start saving results:')
@@ -222,12 +200,6 @@ if __name__ == '__main__':
                                            batch_size_number, loss_err_save_path, initial_epoch)
     t = time.time() - start_time
     print('Finish training - Takes %f seconds' % t)
-
-    # evaluate on validation set and test set
-    # print('validation  data:')
-    # evaluate(checkpoint_path, val_data, val_labels, batch_size_number)
-    # print('test data:')
-    # evaluate(checkpoint_path, test_data, test_labels, batch_size_number)
 
     # predict
     predict(checkpoint_path, val_data, predict_results_save_path+val_save_name, val_data_aft_norm)
