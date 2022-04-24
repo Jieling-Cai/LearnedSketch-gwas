@@ -1,0 +1,101 @@
+count_min_param.py
+==== results ====
+count_min: # hashes 2, # buckets 500000, space 4.00 MB - loss 33.43
+count_min: # hashes 2, # buckets 525000, space 4.20 MB - loss 32.41
+count_min: # hashes 2, # buckets 550000, space 4.40 MB - loss 31.42
+count_min: # hashes 2, # buckets 575000, space 4.60 MB - loss 30.39
+count_min: # hashes 2, # buckets 600000, space 4.80 MB - loss 29.71
+count_min: # hashes 2, # buckets 625000, space 5.00 MB - loss 28.86
+count_min: # hashes 2, # buckets 650000, space 5.20 MB - loss 28.03
+count_min: # hashes 2, # buckets 675000, space 5.40 MB - loss 27.36
+count_min: # hashes 2, # buckets 700000, space 5.60 MB - loss 26.61
+count_min: # hashes 2, # buckets 725000, space 5.80 MB - loss 25.94
+count_min: # hashes 2, # buckets 750000, space 6.00 MB - loss 25.48
+count_min: # hashes 2, # buckets 775000, space 6.20 MB - loss 24.87
+count_min: # hashes 2, # buckets 800000, space 6.40 MB - loss 24.15
+count_min: # hashes 2, # buckets 825000, space 6.60 MB - loss 23.66
+count_min: # hashes 2, # buckets 850000, space 6.80 MB - loss 23.12
+count_min: # hashes 2, # buckets 875000, space 7.00 MB - loss 22.64
+count_min: # hashes 3, # buckets 333333, space 4.00 MB - loss 47.55
+count_min: # hashes 3, # buckets 350000, space 4.20 MB - loss 46.34
+count_min: # hashes 3, # buckets 366666, space 4.40 MB - loss 45.26
+count_min: # hashes 3, # buckets 383333, space 4.60 MB - loss 44.15
+count_min: # hashes 3, # buckets 400000, space 4.80 MB - loss 43.14
+count_min: # hashes 3, # buckets 416666, space 5.00 MB - loss 42.28
+count_min: # hashes 3, # buckets 433333, space 5.20 MB - loss 41.35
+count_min: # hashes 3, # buckets 450000, space 5.40 MB - loss 40.49
+count_min: # hashes 3, # buckets 466666, space 5.60 MB - loss 39.75
+count_min: # hashes 3, # buckets 483333, space 5.80 MB - loss 38.83
+count_min: # hashes 3, # buckets 500000, space 6.00 MB - loss 38.28
+count_min: # hashes 3, # buckets 516666, space 6.20 MB - loss 37.46
+count_min: # hashes 3, # buckets 533333, space 6.40 MB - loss 36.91
+count_min: # hashes 3, # buckets 550000, space 6.60 MB - loss 36.20
+count_min: # hashes 3, # buckets 566666, space 6.80 MB - loss 35.64
+count_min: # hashes 3, # buckets 583333, space 7.00 MB - loss 35.05
+count_min: # hashes 4, # buckets 250000, space 4.00 MB - loss 61.52
+count_min: # hashes 4, # buckets 262500, space 4.20 MB - loss 60.32
+count_min: # hashes 4, # buckets 275000, space 4.40 MB - loss 59.03
+count_min: # hashes 4, # buckets 287500, space 4.60 MB - loss 57.83
+count_min: # hashes 4, # buckets 300000, space 4.80 MB - loss 56.81
+count_min: # hashes 4, # buckets 312500, space 5.00 MB - loss 55.78
+count_min: # hashes 4, # buckets 325000, space 5.20 MB - loss 54.76
+count_min: # hashes 4, # buckets 337500, space 5.40 MB - loss 53.81
+count_min: # hashes 4, # buckets 350000, space 5.60 MB - loss 53.05
+count_min: # hashes 4, # buckets 362500, space 5.80 MB - loss 52.12
+count_min: # hashes 4, # buckets 375000, space 6.00 MB - loss 51.29
+count_min: # hashes 4, # buckets 387500, space 6.20 MB - loss 50.56
+count_min: # hashes 4, # buckets 400000, space 6.40 MB - loss 49.73
+count_min: # hashes 4, # buckets 412500, space 6.60 MB - loss 48.92
+count_min: # hashes 4, # buckets 425000, space 6.80 MB - loss 48.21
+count_min: # hashes 4, # buckets 437500, space 7.00 MB - loss 47.57
+count_min: # hashes 5, # buckets 200000, space 4.00 MB - loss 75.10
+count_min: # hashes 5, # buckets 210000, space 4.20 MB - loss 74.00
+count_min: # hashes 5, # buckets 220000, space 4.40 MB - loss 72.32
+count_min: # hashes 5, # buckets 230000, space 4.60 MB - loss 70.95
+count_min: # hashes 5, # buckets 240000, space 4.80 MB - loss 69.98
+count_min: # hashes 5, # buckets 250000, space 5.00 MB - loss 68.76
+count_min: # hashes 5, # buckets 260000, space 5.20 MB - loss 67.70
+count_min: # hashes 5, # buckets 270000, space 5.40 MB - loss 66.42
+count_min: # hashes 5, # buckets 280000, space 5.60 MB - loss 65.62
+count_min: # hashes 5, # buckets 290000, space 5.80 MB - loss 64.61
+count_min: # hashes 5, # buckets 300000, space 6.00 MB - loss 63.67
+count_min: # hashes 5, # buckets 310000, space 6.20 MB - loss 62.82
+count_min: # hashes 5, # buckets 320000, space 6.40 MB - loss 61.95
+count_min: # hashes 5, # buckets 330000, space 6.60 MB - loss 61.11
+count_min: # hashes 5, # buckets 340000, space 6.80 MB - loss 60.36
+count_min: # hashes 5, # buckets 350000, space 7.00 MB - loss 59.67
+count_min: # hashes 6, # buckets 166666, space 4.00 MB - loss 88.26
+count_min: # hashes 6, # buckets 175000, space 4.20 MB - loss 86.27
+count_min: # hashes 6, # buckets 183333, space 4.40 MB - loss 85.20
+count_min: # hashes 6, # buckets 191666, space 4.60 MB - loss 83.51
+count_min: # hashes 6, # buckets 200000, space 4.80 MB - loss 82.33
+count_min: # hashes 6, # buckets 208333, space 5.00 MB - loss 80.89
+count_min: # hashes 6, # buckets 216666, space 5.20 MB - loss 79.62
+count_min: # hashes 6, # buckets 225000, space 5.40 MB - loss 78.42
+count_min: # hashes 6, # buckets 233333, space 5.60 MB - loss 77.47
+count_min: # hashes 6, # buckets 241666, space 5.80 MB - loss 76.34
+count_min: # hashes 6, # buckets 250000, space 6.00 MB - loss 75.41
+count_min: # hashes 6, # buckets 258333, space 6.20 MB - loss 74.50
+count_min: # hashes 6, # buckets 266666, space 6.40 MB - loss 73.33
+count_min: # hashes 6, # buckets 275000, space 6.60 MB - loss 72.58
+count_min: # hashes 6, # buckets 283333, space 6.80 MB - loss 71.90
+count_min: # hashes 6, # buckets 291666, space 7.00 MB - loss 70.88
+total time: 91.66 sec
+==== best parameters ====
+space: 4.00, n_buckets 500000, n_hashes 2 - 	loss 33.43
+space: 4.20, n_buckets 525000, n_hashes 2 - 	loss 32.41
+space: 4.40, n_buckets 550000, n_hashes 2 - 	loss 31.42
+space: 4.60, n_buckets 575000, n_hashes 2 - 	loss 30.39
+space: 4.80, n_buckets 600000, n_hashes 2 - 	loss 29.71
+space: 5.00, n_buckets 625000, n_hashes 2 - 	loss 28.86
+space: 5.20, n_buckets 650000, n_hashes 2 - 	loss 28.03
+space: 5.40, n_buckets 675000, n_hashes 2 - 	loss 27.36
+space: 5.60, n_buckets 700000, n_hashes 2 - 	loss 26.61
+space: 5.80, n_buckets 725000, n_hashes 2 - 	loss 25.94
+space: 6.00, n_buckets 750000, n_hashes 2 - 	loss 25.48
+space: 6.20, n_buckets 775000, n_hashes 2 - 	loss 24.87
+space: 6.40, n_buckets 800000, n_hashes 2 - 	loss 24.15
+space: 6.60, n_buckets 825000, n_hashes 2 - 	loss 23.66
+space: 6.80, n_buckets 850000, n_hashes 2 - 	loss 23.12
+space: 7.00, n_buckets 875000, n_hashes 2 - 	loss 22.64
+total time: 91.66 sec

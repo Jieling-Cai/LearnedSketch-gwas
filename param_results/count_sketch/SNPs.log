@@ -1,0 +1,101 @@
+count_sketch_param.py
+==== results ====
+count_sketch: # hashes 2, # buckets 500000, space 4.00 MB - loss 29.79
+count_sketch: # hashes 2, # buckets 525000, space 4.20 MB - loss 29.01
+count_sketch: # hashes 2, # buckets 550000, space 4.40 MB - loss 28.31
+count_sketch: # hashes 2, # buckets 575000, space 4.60 MB - loss 27.68
+count_sketch: # hashes 2, # buckets 600000, space 4.80 MB - loss 26.96
+count_sketch: # hashes 2, # buckets 625000, space 5.00 MB - loss 26.35
+count_sketch: # hashes 2, # buckets 650000, space 5.20 MB - loss 25.78
+count_sketch: # hashes 2, # buckets 675000, space 5.40 MB - loss 25.15
+count_sketch: # hashes 2, # buckets 700000, space 5.60 MB - loss 24.68
+count_sketch: # hashes 2, # buckets 725000, space 5.80 MB - loss 24.13
+count_sketch: # hashes 2, # buckets 750000, space 6.00 MB - loss 23.65
+count_sketch: # hashes 2, # buckets 775000, space 6.20 MB - loss 23.21
+count_sketch: # hashes 2, # buckets 800000, space 6.40 MB - loss 22.66
+count_sketch: # hashes 2, # buckets 825000, space 6.60 MB - loss 22.28
+count_sketch: # hashes 2, # buckets 850000, space 6.80 MB - loss 21.90
+count_sketch: # hashes 2, # buckets 875000, space 7.00 MB - loss 21.59
+count_sketch: # hashes 3, # buckets 333333, space 4.00 MB - loss 29.57
+count_sketch: # hashes 3, # buckets 350000, space 4.20 MB - loss 28.55
+count_sketch: # hashes 3, # buckets 366666, space 4.40 MB - loss 27.59
+count_sketch: # hashes 3, # buckets 383333, space 4.60 MB - loss 26.62
+count_sketch: # hashes 3, # buckets 400000, space 4.80 MB - loss 25.76
+count_sketch: # hashes 3, # buckets 416666, space 5.00 MB - loss 24.97
+count_sketch: # hashes 3, # buckets 433333, space 5.20 MB - loss 24.31
+count_sketch: # hashes 3, # buckets 450000, space 5.40 MB - loss 23.51
+count_sketch: # hashes 3, # buckets 466666, space 5.60 MB - loss 22.80
+count_sketch: # hashes 3, # buckets 483333, space 5.80 MB - loss 22.16
+count_sketch: # hashes 3, # buckets 500000, space 6.00 MB - loss 21.55
+count_sketch: # hashes 3, # buckets 516666, space 6.20 MB - loss 20.92
+count_sketch: # hashes 3, # buckets 533333, space 6.40 MB - loss 20.34
+count_sketch: # hashes 3, # buckets 550000, space 6.60 MB - loss 19.81
+count_sketch: # hashes 3, # buckets 566666, space 6.80 MB - loss 19.20
+count_sketch: # hashes 3, # buckets 583333, space 7.00 MB - loss 18.81
+count_sketch: # hashes 4, # buckets 250000, space 4.00 MB - loss 30.67
+count_sketch: # hashes 4, # buckets 262500, space 4.20 MB - loss 29.69
+count_sketch: # hashes 4, # buckets 275000, space 4.40 MB - loss 28.86
+count_sketch: # hashes 4, # buckets 287500, space 4.60 MB - loss 28.07
+count_sketch: # hashes 4, # buckets 300000, space 4.80 MB - loss 27.35
+count_sketch: # hashes 4, # buckets 312500, space 5.00 MB - loss 26.64
+count_sketch: # hashes 4, # buckets 325000, space 5.20 MB - loss 25.91
+count_sketch: # hashes 4, # buckets 337500, space 5.40 MB - loss 25.27
+count_sketch: # hashes 4, # buckets 350000, space 5.60 MB - loss 24.64
+count_sketch: # hashes 4, # buckets 362500, space 5.80 MB - loss 24.03
+count_sketch: # hashes 4, # buckets 375000, space 6.00 MB - loss 23.47
+count_sketch: # hashes 4, # buckets 387500, space 6.20 MB - loss 22.96
+count_sketch: # hashes 4, # buckets 400000, space 6.40 MB - loss 22.43
+count_sketch: # hashes 4, # buckets 412500, space 6.60 MB - loss 21.98
+count_sketch: # hashes 4, # buckets 425000, space 6.80 MB - loss 21.48
+count_sketch: # hashes 4, # buckets 437500, space 7.00 MB - loss 21.02
+count_sketch: # hashes 5, # buckets 200000, space 4.00 MB - loss 32.78
+count_sketch: # hashes 5, # buckets 210000, space 4.20 MB - loss 31.82
+count_sketch: # hashes 5, # buckets 220000, space 4.40 MB - loss 30.83
+count_sketch: # hashes 5, # buckets 230000, space 4.60 MB - loss 29.98
+count_sketch: # hashes 5, # buckets 240000, space 4.80 MB - loss 29.05
+count_sketch: # hashes 5, # buckets 250000, space 5.00 MB - loss 28.30
+count_sketch: # hashes 5, # buckets 260000, space 5.20 MB - loss 27.49
+count_sketch: # hashes 5, # buckets 270000, space 5.40 MB - loss 26.70
+count_sketch: # hashes 5, # buckets 280000, space 5.60 MB - loss 26.05
+count_sketch: # hashes 5, # buckets 290000, space 5.80 MB - loss 25.37
+count_sketch: # hashes 5, # buckets 300000, space 6.00 MB - loss 24.72
+count_sketch: # hashes 5, # buckets 310000, space 6.20 MB - loss 24.09
+count_sketch: # hashes 5, # buckets 320000, space 6.40 MB - loss 23.47
+count_sketch: # hashes 5, # buckets 330000, space 6.60 MB - loss 22.89
+count_sketch: # hashes 5, # buckets 340000, space 6.80 MB - loss 22.34
+count_sketch: # hashes 5, # buckets 350000, space 7.00 MB - loss 21.82
+count_sketch: # hashes 6, # buckets 166666, space 4.00 MB - loss 32.51
+count_sketch: # hashes 6, # buckets 175000, space 4.20 MB - loss 31.57
+count_sketch: # hashes 6, # buckets 183333, space 4.40 MB - loss 30.70
+count_sketch: # hashes 6, # buckets 191666, space 4.60 MB - loss 29.91
+count_sketch: # hashes 6, # buckets 200000, space 4.80 MB - loss 29.06
+count_sketch: # hashes 6, # buckets 208333, space 5.00 MB - loss 28.44
+count_sketch: # hashes 6, # buckets 216666, space 5.20 MB - loss 27.66
+count_sketch: # hashes 6, # buckets 225000, space 5.40 MB - loss 27.00
+count_sketch: # hashes 6, # buckets 233333, space 5.60 MB - loss 26.41
+count_sketch: # hashes 6, # buckets 241666, space 5.80 MB - loss 25.77
+count_sketch: # hashes 6, # buckets 250000, space 6.00 MB - loss 25.22
+count_sketch: # hashes 6, # buckets 258333, space 6.20 MB - loss 24.62
+count_sketch: # hashes 6, # buckets 266666, space 6.40 MB - loss 24.10
+count_sketch: # hashes 6, # buckets 275000, space 6.60 MB - loss 23.53
+count_sketch: # hashes 6, # buckets 283333, space 6.80 MB - loss 23.11
+count_sketch: # hashes 6, # buckets 291666, space 7.00 MB - loss 22.58
+total time: 417.76 sec
+==== best parameters ====
+space: 4.00, n_buckets 333333, n_hashes 3 - 	loss 29.57
+space: 4.20, n_buckets 350000, n_hashes 3 - 	loss 28.55
+space: 4.40, n_buckets 366666, n_hashes 3 - 	loss 27.59
+space: 4.60, n_buckets 383333, n_hashes 3 - 	loss 26.62
+space: 4.80, n_buckets 400000, n_hashes 3 - 	loss 25.76
+space: 5.00, n_buckets 416666, n_hashes 3 - 	loss 24.97
+space: 5.20, n_buckets 433333, n_hashes 3 - 	loss 24.31
+space: 5.40, n_buckets 450000, n_hashes 3 - 	loss 23.51
+space: 5.60, n_buckets 466666, n_hashes 3 - 	loss 22.80
+space: 5.80, n_buckets 483333, n_hashes 3 - 	loss 22.16
+space: 6.00, n_buckets 500000, n_hashes 3 - 	loss 21.55
+space: 6.20, n_buckets 516666, n_hashes 3 - 	loss 20.92
+space: 6.40, n_buckets 533333, n_hashes 3 - 	loss 20.34
+space: 6.60, n_buckets 550000, n_hashes 3 - 	loss 19.81
+space: 6.80, n_buckets 566666, n_hashes 3 - 	loss 19.20
+space: 7.00, n_buckets 583333, n_hashes 3 - 	loss 18.81
+total time: 417.76 sec
