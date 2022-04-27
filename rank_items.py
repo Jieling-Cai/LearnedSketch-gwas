@@ -24,10 +24,15 @@ def obtain_positions(CA_rank_dict,corrected_Fi_rank_dict):
     return np.asarray(CA_rank),np.asarray(corrected_Fi_rank)
 
 if __name__ == '__main__':
-    true_dict = np.load(r'\output\test_chi_square.npy',allow_pickle=True).item()
+    argparser = argparse.ArgumentParser(sys.argv[0])
+    argparser.add_argument("--true_dict_path", type=str, default=r'\output\test_chi_square.npy')
+    argparser.add_argument("--predict_dict_path", type=str, default=r'\NN\test_predict_results.npy')
+    argparser.add_argument("--save_figure_path", type=str, default=r'\Rank_chi.png')
+    args = argparser.parse_args()
+    
+    true_dict = np.load(true_dict_path,allow_pickle=True).item()
     n = len(true_dict)
-    predict_dict = np.load(r'\NN\test_predict_results.npy',allow_pickle=True).item()
-    save_figure_path = r'\Rank_chi.png'
+    predict_dict = np.load(predict_dict_path,allow_pickle=True).item()
 
     true_dict = get_rank(true_dict,n)
     predict_dict = get_rank(predict_dict, n)
