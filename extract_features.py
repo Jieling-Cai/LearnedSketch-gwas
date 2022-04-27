@@ -54,9 +54,13 @@ def append_features(snp):
     return features
 
 if __name__ == '__main__':
-    vcfs_path = glob.glob(r'\data\train\*.vcf')
-    unique_IDs_path = r'\output\train_unique_IDs.npy'
-    save_path = r'\output\train_data.npy'
+    argparser = argparse.ArgumentParser(sys.argv[0])
+    argparser.add_argument("--vcf_dirt", type=str, default=r'\data\train\*.vcf')
+    argparser.add_argument("--unique_IDs_path", type=str, default=r'\output\train_unique_IDs.npy')
+    argparser.add_argument("--save_path", type=str, default=r'\output\train_data.npy')
+    args = argparser.parse_args()
+    
+    vcfs_path = glob.glob(vcf_dirt)
 
     get_data_matrix(unique_IDs_path,vcfs_path,save_path)
 
