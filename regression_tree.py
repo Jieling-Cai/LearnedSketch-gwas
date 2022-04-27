@@ -43,20 +43,18 @@ def predict(data_aft_norm, word_list, model_save_path, predict_results_save_path
     np.save(os.path.join(predict_results_save_path, save_name), ID_Fi)
 
 if __name__ == '__main__':
-    val_save_name = 'val_predict_results.npy'
-    test_save_name = 'test_predict_results.npy'
-
-    # data path
-    train_data_path = r'\output\train_data.npy'
-    train_labels_path = r'\output\train_Fi.npy'
-    val_data_path = r'\output\val_data.npy'
-    val_labels_path = r'\output\val_Fi.npy'
-    test_data_path = r'\output\test_data.npy'
-    test_labels_path = r'\output\test_Fi.npy'
-
-    # save path
-    model_save_path = r'\tree\model.pkl'
-    predict_results_save_path = r'\tree'
+    argparser = argparse.ArgumentParser(sys.argv[0])
+    argparser.add_argument("--val_save_name", type=str, default='val_predict_results.npy')
+    argparser.add_argument("--test_save_name", type=str, default='test_predict_results.npy')
+    argparser.add_argument("--train_data_path", type=str, default='\output\train_data.npy')
+    argparser.add_argument("--train_labels_path", type=str, default='\output\train_Fi.npy')
+    argparser.add_argument("--val_data_path", type=str, default='\output\val_data.npy')
+    argparser.add_argument("--val_labels_path", type=str, default='\output\val_Fi.npy')
+    argparser.add_argument("--test_data_path", type=str, default='\output\test_data.npy')
+    argparser.add_argument("--test_labels_path", type=str, default='\output\test_Fi.npy')
+    argparser.add_argument("--model_save_path", type=str, default='\tree\model.pkl')
+    argparser.add_argument("--predict_results_save_path", type=str, default='\tree')
+    args = argparser.parse_args()
 
     # load data
     train_data, train_labels = get_data_label_list(np.load(train_data_path), train_labels_path)
