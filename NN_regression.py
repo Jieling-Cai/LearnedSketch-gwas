@@ -154,25 +154,23 @@ def predict(checkpoint_path, test_data, predict_results_save_path, test_data_aft
     print('Finish saving results.')
 
 if __name__ == '__main__':
-    num_epoch = 2000
-    batch_size_number = 50000
-    learn_from_scratch = 0
-    initial_epoch = 999
-
-    # data path
-    train_data_path = r'\output\train_data.npy'
-    train_labels_path = r'\output\train_Fi.npy'
-    val_data_path = r'\output\val_data.npy'
-    val_labels_path = r'\output\val_Fi.npy'
-    test_data_path = r'\output\test_data.npy'
-    test_labels_path = r'\output\test_Fi.npy'
-
-    # save path
-    val_save_name = 'val_predict_results.npy'
-    test_save_name = 'test_predict_results.npy'
-    checkpoint_path = r'\NN\model.h5'
-    loss_err_save_path = r'\NN\loss_error.png'
-    predict_results_save_path = '/NN/'
+    argparser = argparse.ArgumentParser(sys.argv[0])
+    argparser.add_argument("--num_epoch", type=int, default=2000)
+    argparser.add_argument("--batch_size_number", type=int, default=50000)
+    argparser.add_argument("--learn_from_scratch", type=int, default=0)
+    argparser.add_argument("--initial_epoch", type=int, default=0)
+    argparser.add_argument("--train_data_path", type=str,  default='\output\train_data.npy')
+    argparser.add_argument("--train_labels_path", type=str,  default='\output\train_Fi.npy')
+    argparser.add_argument("--val_data_path", type=str,  default='\output\val_data.npy')
+    argparser.add_argument("--val_labels_path", type=str,  default='\output\val_Fi.npy')
+    argparser.add_argument("--test_data_path", type=str,  default='\output\test_data.npy')
+    argparser.add_argument("--test_labels_path", type=str,  default='\output\test_Fi.npy')
+    argparser.add_argument("--val_save_name", type=str,  default='val_predict_results.npy')
+    argparser.add_argument("--test_save_name", type=str,  default='test_predict_results.npy')
+    argparser.add_argument("--checkpoint_path", type=str,  default='\NN\model.h5')
+    argparser.add_argument("--loss_err_save_path", type=str,  default='\NN\loss_error.png')   
+    argparser.add_argument("--predict_results_save_path", type=str,  default='/NN/')    
+    args = argparser.parse_args()
 
     # load data
     train_data, train_labels = get_data_label_list(np.load(train_data_path), train_labels_path)
